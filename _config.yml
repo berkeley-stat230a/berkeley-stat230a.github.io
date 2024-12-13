@@ -1,0 +1,63 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via \{\{ site.title \}\}, \{\{ site.github_repo \}\}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via \{\{ site.myvariable \}\}.
+title: "Stat 999: Course Overview"
+tagline: Course Overview
+description: "This is a GitHub Pages template based on Just the Class, developed for the
+purpose of quickly deploying course overview websites. Such websites link to
+previous course offerings, provide a summary of what the course is about,
+and may list learning goals and prerequisites. This overview section would
+normally be replaced by the description of a specific course, and could
+include information from the [Berkeley Academic
+Guide](https://guide.berkeley.edu/courses/stat/).
+
+### Configuration
+After instantiating this template, set the following secrets and variables
+in the new repository.
+
+| Type     | Required | Name                 | Value |
+|----------|----------|----------------------|-------|
+| Secret   | Yes      | SIS_COURSE_API_ID    | `app_id` of [Course API credential](https://developers.api.berkeley.edu/api/100/credentials) |
+| Secret   | Yes      | SIS_COURSE_API_KEY   | `app_key` of [Course API credential](https://developers.api.berkeley.edu/api/100/credentials) |
+| Variable | Yes      | SIS_SUBJECT_AREA     | SIS subject area code, e.g. `STAT` |
+| Variable | Yes      | SIS_COURSE_NUMBER    | SIS course number, e.g. `243` |
+| Variable | Yes      | GIT_NAME             | Git `user.name` for GitHub Action commits, e.g. `GitHub Actions` |
+| Variable | Yes      | GIT_EMAIL            | Git `user.email` for GitHub Action commits, e.g. `unit@dept.berkeley.edu` |
+| Variable | No       | GOOGLE_ANALYTICS_TAG | Google Analytics tag(s), e.g. `G-...` |
+| Variable | No       | AUTHOR               | Jekyll website author, e.g. `Course Staff` |
+| Variable | No       | COURSE_DATA_FILE     | Path to YAML file, e.g. `.github/scripts/override.yml`, containing SIS course data. Data in this file will override anything retrieved from the SIS. |
+"
+author: "SCF"
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://stat999.berkeley.edu'
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
+logo: 'resources/logo.png'
+
+ga_tracking: "G-FOO"
+
+# Theme settings
+remote_theme: just-the-docs/just-the-docs@v0.7.0
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+permalink: pretty
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
